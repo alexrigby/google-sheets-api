@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sheets API Quickstart</title>
+    <meta charset="utf-8" />
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+  </head>
+  <body>
+    <p>Sheets API Quickstart</p>
+   
+    <div id="creds">
+     <label>Client ID:</label>
+     <input placeholder="Google Cloud Client ID" id="client_ID"></input> <br> <br>
+      <label>API Key:</label>
+      <input placeholder="API Key" id="API_key"></input> <br> <br>
+     <label>Sheets ID:</label>
+     <input placeholder="Sheets ID" id="sheets_id"></input> <br> <br> 
+     <button id="confirm">Confirm</button> <br><br>
+     </div>
+     <button id="new_creds">New API Credentials</button> <br>
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button">Authorize</button>
+    <button id="signout_button">Sign Out</button>
+  </body>
+  <script type="text/javascript" src="./index.js"></script>
+</html>
